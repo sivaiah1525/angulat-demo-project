@@ -1,0 +1,9 @@
+
+<h1 style="text-align: center;">ng-style</h1>
+<div style="margin: auto; text-align: center;">
+    <button (click)="taggglefoodlist(foodstatus)">taggle</button>
+    <ul *ngFor="let x of detailes; index as i" >
+        <ol [ngStyle]="{'text-decoration':foodstatus}">{{i+1}}{{x.foodname}}
+            </ol>
+      </ul>
+</div>

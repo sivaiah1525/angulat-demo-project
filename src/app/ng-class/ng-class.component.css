@@ -1,0 +1,12 @@
+.veg{
+    color: blue;
+}
+.nonveg{
+    color: red;
+}
+.veg:hover{
+    color:green;
+}
+.nonveg:hover{
+    color:yellow;
+}

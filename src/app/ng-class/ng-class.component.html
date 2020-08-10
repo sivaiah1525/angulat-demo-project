@@ -1,0 +1,17 @@
+<!-- heading  -->
+<h1 style="text-align: center;"> ng-class</h1>
+<!-- table  -->
+<table style="text-align: center; margin: auto;">
+    <tr>
+        <th>SNO</th>
+        <th>NAME</th>
+        <th>AGE</th>
+        <th>TYPE</th>
+    </tr >
+            <tr *ngFor="let x of detailes; index as i" [ngClass]="{'veg':x.type == 'VEG','nonveg':x.type =='NONVEG'}">
+                <td>{{i+1}}</td>
+                <td>{{x.name}}</td>
+                <td>{{x.age}}</td>
+                <td>{{x.type}}</td>
+            </tr>
+</table>
